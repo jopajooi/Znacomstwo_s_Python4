@@ -25,7 +25,7 @@ print(bushes)
 
 i = [0,1,2]
 j =[0]
-
+full = 0
 
 
 
@@ -56,9 +56,10 @@ for _ in bushes:
         superfinal = maximum1
     else:
         superfinal = maximum2
-
+    if superfinal>full:
+        full = superfinal
 print()
-print(f'максимальное число ягод {superfinal}')
+print(f'максимальное число ягод {full}')
 print('ЦИКЛИЧНОЕ ТЕЛО')
 
 
